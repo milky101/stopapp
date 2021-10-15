@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+  single Category
+{% endblock title %}
+
+{% block content %}
+ <div class="container-fluid">
+    <h1>Single Category  Products</h1>
+    <div class="row">
+        {% if category %}
+            {% for item in category %}
+                <!-- box1  -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{item.image.url}}" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Product: {{item.name}}</h5>
+                        <h5 class="card-title">Category: {{item.category}}</h5>
+                        <p class="card-text">$ {{item.price}}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 1 end  -->
+            {% endfor %}
+        {% endif %}    
+    </div>
+</div>
+{% endblock content %}

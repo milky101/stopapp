@@ -1,0 +1,35 @@
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: bold;
+    color: grey;
+    text-decoration: solid;
+    padding-left: 20px;
+}
+.navbar {
+    background: gray;
+}
+.carousel-item img {
+    margin: auto;
+}
+
+.mk {
+    background: grey;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(53, 51, 51);
+}
+
+/*completed page */
+.myuser h2{
+    color:crimson;
+}
+
+.myuser h3{
+    color: green
+}
+
+.myuser h4{
+    color: grey;
+}
+
+/* completed page done */
